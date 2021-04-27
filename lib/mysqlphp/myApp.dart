@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   getData()async{
-    String theUrl = 'https://jsonplaceholder.typicode.com/posts';
+    String theUrl = 'https://jsonplaceholder.typicode.com/posts/';
     var response = await get(Uri.parse(theUrl),headers: {"Accept":"application/json"});
 
     var responseBody = jsonDecode(response.body);

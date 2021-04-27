@@ -5,12 +5,12 @@ import 'package:flutterapp/pages/loading.dart';
 import 'pages/home.dart';
 
 void main() => runApp(MaterialApp(
-  initialRoute: '/myApp',
+  initialRoute: '/',
   routes: {
-    '/':(context) => Loading(),
+    '/':(context) => MyApp(),
     '/home': (context) => Home(),
     '/location': (context) => ChooseLocation(),
-    '/myApp': (context) => MyApp(),
+    '/loading': (context) => Loading(),
   },
 ));
 
